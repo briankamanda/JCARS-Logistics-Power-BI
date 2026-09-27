@@ -114,7 +114,8 @@ Cleaning was performed as an auditable, staged pipeline rather than ad-hoc edits
   from Revenue and Cost, avoiding redundant or stale calculated data.
 - Branch, Order Date and Delivery Date connect directly to their dimension without a Power Query
   merge, since the fact table's own values already match the dimension's key exactly.
-     ![Model View](Screenshots/Model-view.png)
+
+![Model View](Screenshots/Model-view.png)
 
 ## 8. Key DAX Measures
 
@@ -144,17 +145,29 @@ delivery/logistics, returns/cancellations, and ratings/discounts. Selected highl
    Units Sold, Total Orders, Return Rate), a revenue/units trend, a branch revenue comparison,
    and a deliberate "attention" row (Revenue at Risk, Unresolved Returned Flags). Designed for a
    5-second read, not comprehensive coverage.
+
+![Executive Dashboard](Screenshots/Executive-dashboard.png)
 2. **Sales & Revenue Deep Dive.** MoM trend, revenue by vehicle type and customer type, discount
    band against revenue and units.
+
+![Sales & Revenue Deep Dive](Screenshots/Sales-revenue.png)
 3. **Vehicle & Profitability.** Make/Model matrix with margin rank, fuel type comparison, Vehicle
    Age at Sale against revenue scatter, rating band against revenue.
+
+![Vehicle & Profitability](Screenshots/Vehicle-profitability.png)
 4. **Branch, Region & Sales Rep Performance.** Region-to-Branch drill matrix, rep leaderboard,
    lead source comparison.
+
+![Branch, Region & Sales Rep Performance](Screenshots/Branch-region-rep.png)
 5. **Payment, Delivery & Logistics.** Value versus volume by payment status, delivery rate and
    lag by category, logistics cost as a percentage of revenue by branch.
+
+![Payment, Delivery & Logistics](Screenshots/Payment-delivery-logistics.png)
 6. **Returns, Cancellations & Investigation.** The analyst-defined-question page: KPI cards, a
    full evidence table filtered to `Conflict Flag <> "(none)"`, flagged-row counts by branch, and
    a most-returned-vehicle table.
+
+![Returns, Cancellations & Investigation](Screenshots/Returns-investigation.png)
 
 ## 10. Interactivity
 
@@ -302,7 +315,7 @@ starting point for operational investigation rather than a proven root cause.)*
 ## Repository Contents
 - `JCars_Business_Analysis.pbix`: completed Power BI file
 - `Jcars_data.csv`: original raw dataset used for the analysis
-- `screenshots/`: Model View, Executive Dashboard, and detailed report pages
+- `Screenshots/`: Model View, Executive Dashboard, and detailed report pages
 - `README.md`: this document
 
 ## Author
