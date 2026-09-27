@@ -114,7 +114,7 @@ Cleaning was performed as an auditable, staged pipeline rather than ad-hoc edits
   from Revenue and Cost, avoiding redundant or stale calculated data.
 - Branch, Order Date and Delivery Date connect directly to their dimension without a Power Query
   merge, since the fact table's own values already match the dimension's key exactly.
-     ![Model View](screenshots/Model-view.png)
+     ![Model View](Screenshots/Model-view.png)
 
 ## 8. Key DAX Measures
 
